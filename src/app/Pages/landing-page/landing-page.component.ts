@@ -8,10 +8,11 @@ import { ReasonCardComponent } from "../../Controls/reason-card/reason-card.comp
 import { Reason } from '../../Interfaces/reason';
 import { TutorCardComponent } from "../../Controls/tutor-card/tutor-card.component";
 import { Tutor } from '../../Interfaces/tutor';
+import { EvidenceCardComponent } from "../../Controls/evidence-card/evidence-card.component";
 
 @Component({
   selector: 'app-landing-page',
-  imports: [NavItemComponent, CommunityCardComponent, StudentWorkComponent, GradientTextComponent, ReasonCardComponent, TutorCardComponent],
+  imports: [NavItemComponent, CommunityCardComponent, StudentWorkComponent, GradientTextComponent, ReasonCardComponent, TutorCardComponent, EvidenceCardComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })

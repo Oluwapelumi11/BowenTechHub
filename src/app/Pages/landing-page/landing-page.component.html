@@ -5,7 +5,7 @@
            <div class="mx-10">
                 <img src="/assets/svgs/BowenLogo.svg" alt="Bowen Tech Hub">
            </div>
-           <div class="flex items-center justify-evenly mx-10">
+           <div class="flex items-center justify-between mx-5">
                 <app-nav-item linkName="Home" />
                 <app-nav-item linkName="About Us" />
                 <app-nav-item linkName="Communities" />
@@ -138,7 +138,7 @@
     <!-- end of fifth section -->
 
     <!-- sixth section -->
-     <div class="py-20 w-full bg-[#8C0AFF] overflow-hidden">
+     <div class="py-20 w-full my-10 bg-[#8C0AFF] overflow-hidden">
         <div class="px-10 py-2 text-white">
             <p class="text-5xl font-semibold my-3">Community President & Tutors</p>
             <p class="text-2xl">
@@ -146,7 +146,7 @@
             </p>
         </div>
         <div class="flex w-full  my-10 px-10 justify-center overflow-hidden">
-            <div class="max-w-[90vw] overflow-x-auto space-x-8 flex flex-nowrap scroll-smooth no-scrollbar  ">
+            <div class="max-w-[90vw] overflow-x-auto space-x-8 flex flex-nowrap scroll-smooth  no-scrollbar  ">
                 @for (tutor of tutors; track $index) {
                     <app-tutor-card [tutor]="tutor" />
                 }
@@ -156,5 +156,15 @@
      </div>
     <!--end of sixth section -->
 
+     <!-- seventh section -->
+      <div>
+        <p class="text-center text-5xl font-semibold">Evidence: See For Yourself</p>
+        <div class="flex flex-col items-center justify-between space-y-10 my-10 py-5 px-20">
+            <app-evidence-card />
+            <app-evidence-card />
+            <app-evidence-card />
+        </div>
+      </div>
+     <!-- end of seventh section -->
     
 </div>
