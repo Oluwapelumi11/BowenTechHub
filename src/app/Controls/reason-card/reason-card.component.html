@@ -1,0 +1,12 @@
+<div 
+  class="w-96 px-3 rounded-xl text-white py-2 h-fit min-w-12 min-h-12"  
+  [ngStyle]="{ 
+    'box-shadow': '-5px -5px 7px 0px ' + reason.colour, 
+    'background-color': reason.colour 
+  }"
+>
+    <p class="font-bold text-xl">{{reason.title}}</p>
+    <p class="font-extralight ">
+        {{reason.description}}
+    </p>
+</div>

@@ -1,0 +1,10 @@
+@if (Community.svg !='') {
+    <div class="flex flex-col   justify-between  items-center h-80 w-80">
+        <div class="w-[100%] h-[85%]">
+            <img src="/assets/svgs/{{Community.svg}}" class="w-full h-full" alt="Frontend Development">
+        </div>
+        <button (click)="gotoApply(Community.link)" class="bg-[#8800FF] h-[10%] animate-pulse hover:animate-none w-fit px-2 py-1 rounded-md text-white font-semibold">Enroll Now</button>
+    </div>
+}@else {
+    <div></div>
+}

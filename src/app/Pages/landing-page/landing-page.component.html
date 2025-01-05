@@ -1,0 +1,160 @@
+<div class="overflow-x-hidden">
+    <!-- first page -->
+    <div class="h-screen w-screen px-4 py-6 flex flex-col  justify-between items-center  bg-gradient-to-br from-[#8800FF] via-[#FF6669B5] to-[#FB00FF]">
+        <div class="flex justify-between items-center my-5 w-[70%] h-fit px-10 py-3 rounded-full bg-gradient-to-r from-[#350460] to-[#520099]">
+           <div class="mx-10">
+                <img src="/assets/svgs/BowenLogo.svg" alt="Bowen Tech Hub">
+           </div>
+           <div class="flex items-center justify-evenly mx-10">
+                <app-nav-item linkName="Home" />
+                <app-nav-item linkName="About Us" />
+                <app-nav-item linkName="Communities" />
+                <app-nav-item linkName="Events" />
+                <app-nav-item linkName="Resources" />
+                <app-nav-item linkName="Contact Us" />
+           </div>
+        </div>
+
+        <div class="w-[70%] flex flex-col text-white items-center">
+            <span class="bg-[#8800FF] rounded-3xl px-5 py-2">Empowering Future Tech Leaders</span>
+            <p class="leading-[66px] capitalize font-semibold text-[54px] text-center">Join a community <br> where innovation meets collaboration</p>
+            <p class="capitalize "> Bowen Tech Hub (BTH) is a vibrant and Transformative Platform Designed to Empower the Next Generation of tech Leaders</p>
+
+            <div class="px-5 w-[30%] flex justify-between my-5 ">
+                <button class="bg-[#8800FF] font-semibold animate-pulse hover:animate-none  rounded-md px-3 py-2">Apply Now</button>
+                <button class="bg-[#BDBDBD] font-semibold rounded-md hover:text-[#BDBDBD] hover:bg-black transition-all transform duration-200  px-3 py-2 text-black">Learn More</button>
+            </div>
+        </div>
+
+
+        <div class="w-[70%] text-white relative ">
+            <div class="bg-gradient-to-r absolute top-[-2rem] px-4 py-4 from-[#102327] rounded-xl to-[#5852FF] w-full ">
+                <p class="font-semibold py-2">Exciting News: Applications Now Open!</p>
+                <div class="flex ">
+                    <p class="font-light w-[70%]">Apply for our upcoming 12-week Intensive Tech Training Program. Limited Slots Available! Deadline:[Coming Soon] </p>
+                    <div class="flex justify-evenly w-[30%]">
+                        <button class="bg-[#8800FF] font-semibold animate-pulse rounded-md hover:animate-none px-2 mb-1 py-1">Apply Now</button>
+                        <button class="bg-[#BDBDBD] font-semibold rounded-md  px-2 py-1 hover:text-[#BDBDBD] hover:bg-black transition-all transform duration-200 text-black">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of first Section -->
+
+
+    <!-- second Page -->
+     <div class="mt-36 mb-28  w-screen">
+            <span class="my-8  text-center">
+                <p class="text-[#8800FF] text-5xl font-semibold">Our Communities</p>
+            </span>
+        <div class="flex justify-center w-screen">
+            <div class="px-3 py-3 mt-10 grid gap-x-16 gap-y-14  grid-cols-3">
+                @for (c of comunities; track $index) {
+                    <app-community-card [Community]="c" />
+                }
+            </div>
+        </div>
+     </div>
+    <!-- end of second Section -->
+
+    <!-- third section -->
+     <div class="bg-[#1A022F] text-white px-10 py-10">
+        <span>
+            <p class="text-5xl font-semibold">Works by some of our <br>student</p>
+        </span>
+        <div class="grid grid-cols-3 gap-10 my-16">
+            @for (works of studentWorks; track $index) {
+                <app-student-work />
+            }
+        </div>
+     </div>
+    <!-- end of third section -->
+
+    <!-- fourth section -->
+    <div class="w-full flex justify-center">
+     <div class="mt-16 w-[70%] p-8">
+
+            <div class="flex justify-between ">
+                <app-reason-card [reason]="reasons[0]"/>
+                <app-reason-card [reason]="reasons[1]"/>
+            </div>
+            <div class="flex justify-center h-fit">
+                <app-gradient-text text="Why join" />
+            </div>
+            <div class="flex justify-between items-start h-36">
+                <app-reason-card [reason]="reasons[2]" class="mt-3" />
+                <app-gradient-text text="BTH" class="mt-16" />
+                <app-reason-card [reason]="reasons[3]" class="mt-7" />
+            </div>
+            <div class="flex justify-center h-fit">
+                <app-gradient-text text="community" />
+            </div>
+            <div class="flex justify-between items-start h-36">
+                <app-reason-card [reason]="reasons[4]" class="mt-3" />
+                <app-reason-card [reason]="reasons[5]" class="mt-10" />
+            </div>
+        </div>
+    </div>
+    <!-- end of fourth section -->
+
+    <!-- fifth section -->
+     <div class="my-20">
+        <div class="grid grid-cols-12 gap-0 text-2xl text-white">
+            <div class="col-span-7 flex flex-col justify-between   h-52 bg-[#002B8C]  px-20 py-10">
+               <div>
+                   <p class="text-4xl font-semibold">1000+</p>
+                   <p class="font-light">Students</p>
+               </div>
+               <p class="font-light">Within the last 4 years</p>
+            </div>
+            <div class="col-span-5 flex flex-col justify-between h-52 bg-[#AC247C] px-20 py-10">
+                <div>
+                    <p class="text-4xl font-semibold">8</p>
+                    <p class="font-light">Niche skills</p>
+                </div>
+                <p class="font-light">With experienced tutors</p>
+             </div>
+             <div class="col-span-5 flex flex-col justify-between h-52 bg-[#585AA8] px-20 py-10">
+                <div>
+                    <p class="text-4xl font-semibold">100,000+</p>
+                    <p class="font-light">Students</p>
+                </div>
+                <p class="font-light">Within the last 4 years</p>
+             </div>
+             <div class="col-span-7 flex flex-col justify-between h-52 bg-[#EF4972]  px-20 py-10">
+                <div>
+                    <p class="text-4xl font-semibold">1000+</p>
+                    <p class="font-light">Students</p>
+                </div>
+                <p class="font-light">Within the last 4 years</p>
+             </div>
+        </div>
+        <div class="h-[50vh] flex flex-col items-center justify-center">
+            <p class="text-4xl font-semibold">Where Our Learners Work</p>
+            <p class="w-8/12 text-2xl font-light px-3 py-4">Drawing from their extensive industry experience, they will demystify complex concepts, provide insights, and offer guidance to nurture your skills. Get ready to unlock your full potential as you embark on this transformative learning experience</p>
+        </div>
+     </div>
+    <!-- end of fifth section -->
+
+    <!-- sixth section -->
+     <div class="py-20 w-full bg-[#8C0AFF] overflow-hidden">
+        <div class="px-10 py-2 text-white">
+            <p class="text-5xl font-semibold my-3">Community President & Tutors</p>
+            <p class="text-2xl">
+                Drawing from their extensive industry experience, they will demystify complex concepts, provide insights, and offer guidance to nurture your skills. Get ready to unlock your full potential as you embark on this transformative learning experience.
+            </p>
+        </div>
+        <div class="flex w-full  my-10 px-10 justify-center overflow-hidden">
+            <div class="max-w-[90vw] overflow-x-auto space-x-8 flex flex-nowrap scroll-smooth no-scrollbar  ">
+                @for (tutor of tutors; track $index) {
+                    <app-tutor-card [tutor]="tutor" />
+                }
+            </div>
+          </div>
+          
+     </div>
+    <!--end of sixth section -->
+
+    
+</div>
