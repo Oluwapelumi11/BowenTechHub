@@ -9,6 +9,7 @@ import { Reason } from '../../Interfaces/reason';
 import { TutorCardComponent } from "../../Controls/tutor-card/tutor-card.component";
 import { Tutor } from '../../Interfaces/tutor';
 import { EvidenceCardComponent } from "../../Controls/evidence-card/evidence-card.component";
+import { Evidence } from '../../Interfaces/evidence';
 
 @Component({
   selector: 'app-landing-page',
@@ -52,5 +53,11 @@ export class LandingPageComponent {
     {name:'Okpala Peniel', description:'Project Management Tutor'},
     {name:'Adekeye Adeola', description:'President, Graphic Design Community'},
     {name:'Ojekunle Adeola', description:'Backend Development Tutor'},
+  ]
+
+  evidences: Evidence[] = [
+    {title: 'Frontend Engineering', name:'Abiola Ayodele', description:'Drawing from their extensive industry experience, they will demystify complex concepts, provide insights, and offer guidance to nurture your skills. Get ready to unlock your full potential as you embark on this transformative learning experience.'},
+    {title: 'Backend Engineering', name:'Abiola Ayodele', description:'Drawing from their extensive industry experience, they will demystify complex concepts, provide insights, and offer guidance to nurture your skills. Get ready to unlock your full potential as you embark on this transformative learning experience.'},
+    {title: 'Frontend Engineering', name:'Abiola Ayodele', description:'Drawing from their extensive industry experience, they will demystify complex concepts, provide insights, and offer guidance to nurture your skills. Get ready to unlock your full potential as you embark on this transformative learning experience.'}
   ]
 }

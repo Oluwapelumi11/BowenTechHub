@@ -160,11 +160,45 @@
       <div>
         <p class="text-center text-5xl font-semibold">Evidence: See For Yourself</p>
         <div class="flex flex-col items-center justify-between space-y-10 my-10 py-5 px-20">
-            <app-evidence-card />
-            <app-evidence-card />
-            <app-evidence-card />
+            @for (e of evidences; track $index) {
+                <app-evidence-card [evidence]="e" class ="{{$index % 2 === 0 ? 'text-right':'text-left' }}" />
+            }
         </div>
       </div>
      <!-- end of seventh section -->
     
+     <!-- eight section -->
+      <div class="bg-[#8800FF] text-white py-8 px-10">
+        <div class="flex justify-between w-full">
+            <div class="flex-1">
+                <p class="text-4xl font-semibold my-2">BOWEN TECHHUB EXECUTIVES</p>
+                <P class="text-xl text-[#C0C0C0] font-light">Meet the 2025 BTH Executives</P>
+            </div>
+            <div class="flex justify-end  items-center flex-1 w-2/5 ">
+                <div class="px-6 py-3  flex items-center justify-between w-6/12 rounded-xl bg-white">
+                    <button class="bg-[#6500BC] rounded-xl text-white px-5 py-2">President Bio</button>
+                    <button class="bg-[#BDBDBD] text-[#6500BC] hover:bg-black transition-all transform duration-300 ease-in-out  rounded-xl hover:text-white px-5 py-2">View Executives</button>
+                </div>
+            </div>
+        </div>
+        <div class=" flex justify-evenly py-10 my-8 space-x-10 ">
+            <div class="min-h-[30rem] bg-[#520099] min-w-[26rem] rounded-3xl">
+                <div class="min-h-[30rem] bg-white shadow-2xl transform hover:translate-x-0 hover:translate-y-0 transition-all duration-300 ease-in-out cursor-crosshair -translate-x-3 -translate-y-3 min-w-[26rem] rounded-3xl">
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-start ">
+                <p class="text-2xl ">President, Bowen Techhub</p>
+                <p class="text-ellipsis  text-4xl  w-4/5">Alagbe Peace is a Product  and Brand design ba Lagos, Nigeria. He helps brands tell compelling stories via creative designs. Much of him ... </p>
+                <button class="my-4 px-4 py-2 bg-[#FB00FF] text-white  rounded-lg text-xl">Read More</button>
+            </div>
+        </div>
+      </div>
+     <!-- end of eight section -->
+
+     <!-- ninth section -->
+
+      
+
+     <!-- end of ninth section -->
 </div>
